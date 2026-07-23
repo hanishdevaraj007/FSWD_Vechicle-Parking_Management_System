@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Park Vehicle</title>
+</head>
+<body>
+    <h2>Vehicle Entry Form</h2>
+    <form action="parkVehicle" method="post">
+        <label>Vehicle Number:</label><br>
+        <input type="text" name="vehicleNumber" placeholder="e.g. TN-37-AB-1234" required><br><br>
+
+        <label>Vehicle Type:</label><br>
+        <select name="vehicleType" required>
+            <option value="2-Wheeler">2-Wheeler</option>
+            <option value="4-Wheeler">4-Wheeler</option>
+        </select><br><br>
+
+        <input type="submit" value="Park Vehicle">
+    </form>
+    <br>
+    <a href="exit_vehicle.html">Go to Exit Vehicle</a> | <a href="viewStatus">Live Dashboard</a>
+</body>
+</html>
