@@ -7,7 +7,7 @@ import model.Vehicle;
 public class ParkingDAO {
     private static final String URL = "jdbc:mysql://localhost:3306/parking_db";
     private static final String USER = "root";
-    private static final String PASS = "You_are_not_allowed_to_know"; // Replace with your MySQL password
+    private static final String PASS = "Don't_See_My_Password";
 
     // Helper method to establish database connection
     private Connection getConnection() throws Exception {

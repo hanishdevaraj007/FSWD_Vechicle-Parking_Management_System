@@ -19,10 +19,7 @@ public class ExitVehicleServlet extends HttpServlet {
         ParkingDAO dao = new ParkingDAO();
         Vehicle vehicle = dao.exitVehicle(vehicleNumber);
 
-        pw.println("<html><head><title>Exit Receipt</title>");
-        pw.println("<link rel='stylesheet' href='style.css'>"); // <-- CSS Link
-        pw.println("</head><body>");
-        pw.println("<div class='container'>");
+        pw.println("<html><head><title>Exit Receipt</title></head><body>");
 
         if (vehicle != null) {
             pw.println("<h2 style='color:blue;'>Vehicle Checkout Successful!</h2>");
