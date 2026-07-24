@@ -26,7 +26,10 @@ public class ParkVehicleServlet extends HttpServlet {
         boolean success = dao.parkVehicle(vehicle);
 
         // 4. Render output View
-        pw.println("<html><head><title>Parking Ticket</title></head><body>");
+        pw.println("<html><head><title>Parking Ticket</title>");
+        pw.println("<link rel='stylesheet' href='style.css'>");
+        pw.println("</head><body>");
+        pw.println("<div class='container'>");
         if (success) {
             pw.println("<h2 style='color:green;'>Vehicle Parked Successfully!</h2>");
             pw.println("<p><b>Vehicle No:</b> " + vehicle.getVehicleNumber() + "</p>");

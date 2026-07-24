@@ -20,7 +20,10 @@ public class ViewStatusServlet extends HttpServlet {
         int occupiedSlots = dao.getOccupiedSlotCount();
         int totalSlots = 10; // We seeded 10 slots in MySQL
 
-        pw.println("<html><head><title>Parking Status</title></head><body>");
+        pw.println("<html><head><title>Parking Status</title>");
+        pw.println("<link rel='stylesheet' href='style.css'>");
+        pw.println("<div class='container'>");
+        pw.println("</head><body>");
         pw.println("<h2>Live Parking Dashboard</h2>");
         pw.println("<h3>Slots Occupied: " + occupiedSlots + " / " + totalSlots + "</h3>");
         
